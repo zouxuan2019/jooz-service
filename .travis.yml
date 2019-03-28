@@ -3,5 +3,9 @@ jobs:
   include:
     - stage: build
       script: mvn compile
-    - stage: unitTest
+    - stage: test
       script: mvn test
+    -stage: deploy
+deploy:
+  provider: azure_web_apps
+  site: jooz-service
