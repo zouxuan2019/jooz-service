@@ -1,8 +1,12 @@
 package edu.nus.joozservice.dto;
 
+import lombok.Data;
+
 import java.math.BigDecimal;
 
-public class PurchaseDto {
+@Data
+public class QrDto {
     private Integer customerId;
     private BigDecimal creditAmount;
+    private String qrString;
 }
