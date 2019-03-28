@@ -5,3 +5,7 @@ jobs:
       script: mvn compile
     - stage: test
       script: mvn test
+    - stage: deploy
+      deploy:
+      provider: azure_web_apps
+      site: jooz-service
