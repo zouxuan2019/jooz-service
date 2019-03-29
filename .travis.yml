@@ -8,7 +8,7 @@ jobs:
     - stage: deploy
       deploy:
       before_deploy: git push origin master:refs/heads/master
+      script: mvn clean package -DskipTests
       provider: azure_web_apps
-      site: jooz-service
       on:
       branch: master
