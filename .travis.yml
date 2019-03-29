@@ -10,4 +10,4 @@ jobs:
       provider: azure_web_apps
       site: jooz-service
       on:
-      branch: release
+      branch: master
