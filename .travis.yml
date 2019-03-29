@@ -9,5 +9,6 @@ jobs:
       deploy:
       script: mvn clean package -DskipTests
       provider: azure_web_apps
+      verbose: true
       on:
       branch: master
