@@ -51,9 +51,8 @@
             <artifactId>h2</artifactId>
         </dependency>
     </dependencies>
-
-
     <build>
+      <finalName>ijooz-service</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
